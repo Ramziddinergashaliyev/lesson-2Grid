@@ -12,6 +12,7 @@
   border-radius: 10px;
   padding: 20px;
   overflow: hidden;
+  animation: box 3s alternate 0s ease-in forwards;
 }
 
 .box__title {
@@ -56,10 +57,16 @@
 }
 
 .green {
-  margin-top: 40px;
+  margin-top: 80px;
   background-color: #A9FF2C;
   padding: 20px;
   border-radius: 10px;
+  transition: 1s;
+}
+
+.green:hover {
+  background: aqua;
+
 }
 
 .green__title {
@@ -91,5 +98,15 @@
   .green__title {
     font-size: 20px;
     line-height: 25px;
+  }
+}
+
+
+@keyframes box {
+  from {
+    transform: translateY(100px);
+  }
+  from {
+    transform: translateY(40px);
   }
 }

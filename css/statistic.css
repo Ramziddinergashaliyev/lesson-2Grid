@@ -21,6 +21,10 @@
   padding: 20px;
 }
 
+.statistic__card:hover {
+  box-shadow: 1px 1px 15px rgb(194, 190, 190);
+}
+
 .statistic__card__title {
   font-family: Roboto;
   font-size: 21px;
