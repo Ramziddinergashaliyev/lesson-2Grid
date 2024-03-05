@@ -1,0 +1,97 @@
+.mobil {
+  padding: 50px 0px;
+}
+
+.mobil__title {
+  font-family: Roboto;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.mobil__card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.mobil__left img {
+  width: 80%;
+}
+
+.mobil__left__text {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.mobil__left__title {
+  font-family: Roboto;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.mobil__left__desc {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #707378;
+}
+
+.mobil__left__text {
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 6;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+} 
+
+@media (max-width:1100px) {
+  .mobil__left__text {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width:900px) {
+  .mobil__card {
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+
+@media (max-width:700px) {
+  .mobil__left img{
+    width: 100%;
+  }
+}
+
+@media (max-width:400px) {
+  .mobil__left__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .mobil__title {
+    font-size: 26px;
+  }
+
+  .mobil__left__desc {
+    font-size: 16px;
+    line-height: 15px;
+  }
+}
