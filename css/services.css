@@ -1,0 +1,84 @@
+.services {
+  padding: 50px 0px;
+}
+
+.services__title {
+  font-family: Roboto;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.services__text {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 10px 0px 30px;
+}
+
+.services__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+.services__card img{
+  width: 100%;
+}
+
+.services__card__title {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 10px 0px 15px;
+}
+
+.services__card__text {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.services__card__text {
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+} 
+
+@media (max-width:800px) {
+  .services__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width:500px) {
+  .services__card__title {
+    font-size: 24px;
+    padding: 5px 0px;
+  }
+  .services__card__text {
+    font-size: 18px;
+  }
+
+  .services__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .services__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
